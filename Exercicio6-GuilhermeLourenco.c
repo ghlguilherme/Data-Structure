@@ -2,16 +2,16 @@
 #include <stdlib.h>
 #include <math.h>
 /*
- * Author: Guilherme Henrique Lourenço
- * Última Modificação: 29/08/2014
+ * Author: Guilherme Henrique LourenÃ§o
+ * Ãšltima ModificaÃ§Ã£o: 29/08/2014
  * Language:  C
+ *ResoluÃ§Ã£o equaÃ§Ã£o do segundo grau
  */
  
-//Protótipo da função
+//ProtÃ³tipo da funÃ§Ã£o
 int raizes(float a, float b, float c, float* x1, float* x2);
 void main(int argc, char *argv[]){
 	float a,b,c,x1=0,x2=0;
-	
 	printf("Digite o termo [a] da equacao: ");
 	scanf("%f",&a);
 	printf("Digite o termo [b] da equacao: ");
