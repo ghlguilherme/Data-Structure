@@ -1,11 +1,11 @@
 #include <stdio.h>
 /*
- * Author: Guilherme Henrique Lourenço
- * Última Modificação: 29/08/2014
+ * Author: Guilherme Henrique LourenÃ§o
+ * Ãšltima ModificaÃ§Ã£o: 29/08/2014
  * Language:  C
  */
  
-//Protótipo da função
+//ProtÃ³tipo da funÃ§Ã£o
 int soma_impares(int n);
 
 void main(int argc, char *argv[]){
@@ -20,7 +20,7 @@ int soma_impares(int n){
 	int num = (n*2);
 	for(i=0;i<=num;i++){
 		if(i%2!=0){
-			soma = soma +i;
+			soma +=i;
 		}
 	}
 	
