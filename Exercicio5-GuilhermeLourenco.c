@@ -2,12 +2,12 @@
 #include <math.h>
 #include <stdlib.h>
 /*
- * Author: Guilherme Henrique Lourenço
- * Última Modificação: 29/08/2014
+ * Author: Guilherme Henrique LourenÃ§o
+ * Ãšltima ModificaÃ§Ã£o: 29/08/2014
  * Language:  C
  */
  
-//Protótipo da função
+//ProtÃ³tipo da funÃ§Ã£o
 double pi(int n);
 
 void main(int argc, char *argv[]){
@@ -16,14 +16,12 @@ void main(int argc, char *argv[]){
 	printf("Digite o valor de n: ");
 	scanf("%d",&n);
 	printf("O valor aproximado de pi: %.16lf\n", pi(n));
-	
-	
 }
 
 double pi(int n){
    double *p;
-   //Alocação dinâmica para calcular pi com precisao de até 10^17
-   p= (double*)malloc(10000000*sizeof(double));
+   //AlocaÃ§Ã£o dinÃ¢mica para calcular pi com precisao de atÃ© 10^17
+   p= (double*)malloc(1000*sizeof(double));
    
    if(p==NULL){
    	printf("Memoria insuficiente!!!");
@@ -40,7 +38,6 @@ double pi(int n){
  		*p = *p + pow(den,-1);
  		den+=2;
  	}
- 	//printf("%d  %.16lf \n",den, p);
  	i++;
  }
   return(4 * *p);
